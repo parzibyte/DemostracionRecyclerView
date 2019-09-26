@@ -63,7 +63,7 @@ public class AdaptadorRecyclerView extends RecyclerView.Adapter<ViewHolderMascot
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolderMascota holder, int position) {
-        // Dibujar la fila de la mascota con los datos de la mascota actualmente solicidata según la variable position
+        // Dibujar la fila de la mascota con los datos de la mascota actualmente solicitada según la variable position
         Mascota mascota = this.mascotas.get(position);
         holder.getTextViewEdad().setText(String.valueOf(mascota.getEdad()));
         holder.getTextViewNombre().setText(mascota.getNombre());
